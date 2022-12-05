@@ -17,6 +17,12 @@ body{
     color: #131212;
     font-weight: bold;
 }
+.nav-shadow{
+    /* box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset; */
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+
 /* -------------------------navbar start--------------------------- */
 
 
@@ -182,7 +188,6 @@ body{
     display: block;
     margin: 0 auto;
     margin-top: -50px;
-
 }
 .home .attendance-card .card p{
     margin: 0 auto;
@@ -196,6 +201,12 @@ body{
         text-align: center;
         margin-top: 150px;
         padding: 10px;
+    }
+    .google-play-card .card{
+        height: 110px;
+    }
+    .home .app-store-card .card{
+        height: 110px;
     }
     .home .headline-contents{
         width: 100%;
@@ -238,6 +249,7 @@ body{
     margin-top: -20px;
 
 }
+
 .about .image-card .card img{
     width: 130px;
     height: auto;
@@ -250,9 +262,16 @@ body{
 }
 @media(max-width: 991px){
     .about {
-        margin-top: 150px;
+        margin-top: 100px;
         text-align: center;
         padding: 10px;
+    }
+    .about .about-cards{
+        margin-top: 50px;
+        order: 2;
+    }
+    .about .about-details{
+        order: 1;
     }
     .about  h5{
         text-align: center;
@@ -286,6 +305,7 @@ body{
     .features{
         margin-top: 200px;
     }
+
     .features .features-para{
         width: 60%;
         margin: 0 auto;
@@ -405,7 +425,7 @@ body{
 }
 @media(max-width: 991px){
     .pricing{
-        margin-top: 150px;
+        margin-top: 100px;
         padding: 10px;
     }
     .pricing .pricing-para{
@@ -476,7 +496,7 @@ body{
     @media(max-width: 991px){
         .contact{
             padding: 10px;
-            margin-top: 150px;
+            margin-top: 50px;
             text-align: center;
         }
         .contact .contact-para{
@@ -561,10 +581,13 @@ body{
     border-radius: 15px;
     border: 0;
 }
+.footer .input-group button:hover{
+    opacity: 0.6;
+}
 @media(max-width: 991px){
     .footer{
         text-align: center;
-
+        margin-top: 50px;
     }
     .footer h6{
         margin-top: 20px;
@@ -576,5 +599,6 @@ body{
         margin-top: 50px;
     }
 }
+
 
 /* -------------------------footer end--------------------------- */
